@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration Form</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            background-color: #1b1b32;
+            color: #fff;
+        }
+
+        form {
+            width: 70vh;
+            max-width: 500px;
+            min-height: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .form-control, .form-select {
+            background-color: #0a0a23;
+            color: #fff;
+        }
+
+        hr {
+            border-width: 2px;
+            margin-top: 30px;
+        }
+
+        dt {
+            padding-top: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12">
+                <div class="tittle_sec text-center py-3">
+                    <h1>Ragistration Form</h1>
+                    <p> <i>Please fill out this form with the required information</i></p>
+                </div>
+                <form>
+                    <dl>
+                        <dt class="form-label">Enter Your First Name:</dt>
+                        <dd><input type="text" class="form-control"></dd>
+
+                        <dt class="form-label">Enter Your Last Name:</dt>
+                        <dd><input type="text" class="form-control"></dd>
+
+                        <dt class="form-label">Enter Your Email:</dt>
+                        <dd><input type="email" class="form-control"></dd>
+
+                        <dt class="form-label">Create New Password:</dt>
+                        <dd><input type="password" class="form-control"></dd>
+
+                        <hr>
+
+                        <dt class="form-label">Account type (required)</dt>
+                        <dd><input type="radio" name="check" id="personal" class="form-check-input"><label for="personal" class="form-check-label mx-2"> Personal</label></dd>
+                        <dd><input type="radio" name="check" id="business" class="form-check-input"><label for="business" class="form-check-label mx-2"> Business</label></dd>
+
+                        <hr>
+                        <dt class="form-label">Upload a Profile Picture:</dt>
+                        <dd><input type="file" id="file" class="form-control"></dd>
+
+                        <dt class="form-label">Input Your Age (Year's)</dt>
+                        <dd><input type="number" name="number" id="number" placeholder="00" class="form-control" min="15" max="60"></dd>
+
+                        <dt class="form-label">How did you hear about us?</dt>
+                        <dd>
+                            <select name="social" id="social" class="form-select" enabled>
+                                <option>Select One</option>
+                                <option>WhatsApp</option>
+                                <option>Instagram</option>
+                                <option>Facebook</option>
+                                <option>Linkedin</option>
+                                <option>Other</option>
+                            </select>
+                        </dd>
+
+                        <dt class="form-label">Message</dt>
+                        <dd><textarea name="message" id="message" cols="8" rows="5" class="form-control" placeholder="I like coding on the beach..."></textarea></dd>
+
+                        <dd class="form-switch"><input type="checkbox" class="form-check-input" id="check"><label for="text" class="form-label mx-2">I accapt the <a href="#">terms and conditions.</a></label></dd>
+
+                        <dt><button class="form-control">Submit</button></dt>
+                    </dl>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
